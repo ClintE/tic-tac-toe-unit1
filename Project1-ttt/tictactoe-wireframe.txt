@@ -1,0 +1,37 @@
+﻿TIC - TAC - TOE
+WHOPR theme from War Games
+
+
+Requirements:
+Player 1 - X
+Player 2 - O
+Designation will be decided by who enters their name first (X) and second (O)
+
+
+
+
+Play:
+Player1 will go first and the the square will change to an X upon selection. 
+Player2 will go next and the square will change to an O upon seletion.
+At the end of the game, or if a player wins, a message will display stating which player has won or if the game is a tie.
+There will be a tally board on the right side of the screen that will display the player’s name and number of wins
+
+
+
+
+Design:
+The game board will be nine buttons that will render X or O once pressed and in alternating sequence.
+The wins will be tallied on the right using logic similar to the scorekeeper from the rock paper scissors game.
+Maybe an image of a hash tag or of the game board can be superimposed over the background image so that the main focus can be on the creation of the game play buttons.
+
+
+Plan of development:
+* Start with the background and board placement and styling. - HTML and CSS
+   * possibly use a layout from Pure CSS or a similar framework
+* Create and style the buttons for game play. - CSS
+* Create the logic behind the game.   - Javascript and jQuery
+
+
+Notes:
+Design will utilize prompts to populate the player’s name area so that an input does not have to be used.  Player name will be displayed by the tally section along with their designation (X or O).
+The game will use a background image that has a missile exhaust trail with the game board on the left side and the tally sheet on the right.
