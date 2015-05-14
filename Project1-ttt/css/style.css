@@ -1,15 +1,31 @@
-/*.pure-u-1 [pure-u-md-1-3] {
-	border: 1px black;
-	background-color: red;
-}*/
 
-/*.row {
-	font-size: 5em;
-}*/
+
+body {
+	background-image: url(../images/missile.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+header {
+	height: 10em;
+	background-color: #007500;
+}
+header > p {
+	font-size: 4em;
+	font-family: monaco;
+}
 .row {
-	font-size: 2em;
+	padding-left: 20em;
+	padding-top: 10em;
 }
 .square {
+	min-height: 100px;
+	min-width: 50px;
+	max-width: 85px;
+	background-color: blue;
+	box-sizing: border-box;
+	border: 5px solid red;
+}
+.tally {
 	min-height: 100px;
 	min-width: 50px;
 	max-width: 85px;
