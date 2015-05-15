@@ -5,6 +5,14 @@ body {
 	background-repeat: no-repeat;
 	background-position: bottom;
 }
+footer {
+	background-color: #007500;
+	height: 10em;
+}
+footer > p {
+	font-size: 3em;
+	font-family: monaco;
+}
 header {
 	height: 10em;
 	background-color: #007500;
@@ -24,6 +32,10 @@ header > p {
 	background-color: blue;
 	box-sizing: border-box;
 	border: 5px solid red;
+	font-size: 3em;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 2em;
 }
 .tally {
 	min-height: 100px;
