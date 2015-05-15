@@ -4,12 +4,14 @@ $(document).ready(function () {
 	var player1 = prompt("Player 1, please enter your name");
 	var player2 = prompt("Player 2, please enter your name");
 	
-	$('#j').html(player1);
-	$('#k').html(player2);
+	$('#k').html(player1);
+	$('#l').html(player2);
 	
 	var input1 = "X";
 	var input2 = "O";
 	var currentPlayer = input1;
+	var winsx = 0
+	var winso = 0
 
 	function switchPlayer() {
 		if (currentPlayer === input1) {
@@ -35,6 +37,9 @@ $(document).ready(function () {
 			$('#a').html() == 'X' && $('#e').html() == 'X' && $('#i').html() == 'X' || 
 			$('#c').html() == 'X' && $('#e').html() == 'X' && $('#g').html() == 'X'
 			) {
+
+			winsx++;
+			$('#n').text(winsx);
 			return alert("the winner is" + " " +player1);
 		}
 		if (
@@ -47,71 +52,25 @@ $(document).ready(function () {
 			$('#a').html() == 'O' && $('#e').html() == 'O' && $('#i').html() == 'O' || 
 			$('#c').html() == 'O' && $('#e').html() == 'O' && $('#g').html() == 'O'
 			) {
+
+			winso++;
+			$('#o').text(winso);
 			return alert("the winner is" + player2);
 		}
+		
 	};
-	// 	}
-	// 	for ( i=0; i<grid[].length; i++ )
-	// 		if (grid[0])
-
-
-	//  		if ('#a' == '#b' == '#c') {
-	// 		return (winner);
-	// 		}
-	// 		else if ('#d' == '#e' == '#f') {
-	// 			return (winner);
-	// 		}
-	// 		else if ('')
-	// } 
-	// 	var win = $()
-	// }
+	
+	$('.reset').click(function() {
+		$('.square').text('');
+	})
+	
+});
 
 	
 
-	// 	if ($d)
-
-
-
- 	 
-
- });
 
 
 
 
-// 		function () {
-// 			//alert('sweetness')
-// 			$(this).siblings('p').toggleClass('hidden');
-// 			//alert('sweetness')
-// 		}
-// 	);
-// 	//begin the content remove code
-// 	$('.delete').click(
-// 		function () {
-// 			//alert('sweetness')
-// 			$(this).parent().remove();
-// 			//alert('sweetness')
-// 		}
-// 	);
-// 	//begin the content edit code
-//
-// 	$('.edit').click(
-// 		function () {
-// 			//alert('click')
-// 			$(this).next().toggleClass('hidden');
-//
-// 	});
-//
-//
-//
-// 			//bring up form to enter text that can replace contents
-// 	$('.submit').click(
-// 		function () {
-// 			//alert('click')
-// 			var value = $(this).prev().val();
-// 			$("#para1").replaceWith("<p>" + value + "</p>");
-//
-// 			});
-//
-//
-// });
+
+

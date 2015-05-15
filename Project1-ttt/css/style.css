@@ -21,6 +21,15 @@ header > p {
 	font-size: 4em;
 	font-family: monaco;
 }
+.reset {
+	background-color: red;
+	font-family: monaco;
+	font-size: 2em;
+	margin-top: .85em;
+
+
+
+}
 .row {
 	padding-left: 20em;
 	padding-top: 10em;
@@ -39,9 +48,16 @@ header > p {
 }
 .tally {
 	min-height: 100px;
-	min-width: 50px;
-	max-width: 85px;
+	min-width: 150px;
+	max-width: 160px;
 	background-color: blue;
 	box-sizing: border-box;
 	border: 5px solid red;
 }
+#j, #k, #l, #m, #n, #o {
+	font-family: monaco;
+	font-size: 2em;
+	text-align: center;
+	vertical-align: middle;
+}
+
